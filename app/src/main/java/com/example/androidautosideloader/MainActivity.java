@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         if (uri != null) {
             Intent intent;
             intent = new Intent(Intent.ACTION_INSTALL_PACKAGE);
-            intent.setData(uri); // getUri(file)
+            intent.setData(uri);  // getUri(file)
             intent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION | Intent.FLAG_ACTIVITY_NEW_TASK);
             intent.putExtra(Intent.EXTRA_NOT_UNKNOWN_SOURCE, true);
             intent.putExtra(Intent.EXTRA_INSTALLER_PACKAGE_NAME, "com.android.vending");
